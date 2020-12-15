@@ -8,7 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Hit Artist Analyzer</title>
+    <title>Covid Trends</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -52,9 +52,9 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="#audio">Audio</a>
-                    <a class="mdl-navigation__link" href="#lyrics">Lyrics</a>
-                    <a class="mdl-navigation__link" href="#comparison">Artists comparison</a>
+                    <a class="mdl-navigation__link" href="#audio">Symptoms</a>
+                    <a class="mdl-navigation__link" href="#lyrics">Social</a>
+                    <a class="mdl-navigation__link" href="#comparison">How to?</a>
                     <a class="mdl-navigation__link" href="https://github.com/com-480-data-visualization/com-480-project-js" target="_blank">Github repository</a>
                 </nav>
             </div>
@@ -91,10 +91,12 @@
                         Since the situation evolves every week, it's interesting to have an accurate short term forecast in order to better anticipate the next outbreak and develop a better strategy to contain the virus and thus limit the economic and social impact. This study proposes to extend the method used in the paper “Predicting the present with Google trends” to develop a short term forecast of the number of Covid-19 cases in France. Then, improving this prediction using appropriate and relevant Google Trends data. For example, by including indexes of topics related to health at the level of research on the symptoms of Covid, or by using indexes related to social life and which could indicate an increase in trips and gatherings over a given period.</p>
                 </div>
 
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/4.embed" height="525" width="100%"></iframe>
+
 
                 <!-- Audio Analysis -->
                 <div id="audio">
-                    <h1>Audio Analysis</h1>
+                    <h1>Cross-correlation Analysis</h1>
                     <h4>A Data-Driven Audio Tour of the Artists</h4>
                     <hr>
                     <p>To identify and compare the audio signature of the different artists, we propose to use the following features provided by <a class="link" href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">Spotify</a> that were then normalized:
@@ -107,7 +109,9 @@
 
 
 
-                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/1.embed" height="525" width="100%"></iframe>
+                    
+
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/8.embed" height="525" width="100%"></iframe>
 
 
                     <div class="comment">
