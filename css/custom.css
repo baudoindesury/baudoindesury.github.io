@@ -257,6 +257,7 @@ button {
 /* CSS for the comment box */
 .comment {
     margin: auto;
+    width: 90%;
 }
 
 .comment-title {
@@ -266,12 +267,31 @@ button {
     padding: 4px 10px 4px 10px;
     font-weight: bold;
     font-size: 18px;
+    border-radius: 5px 5px 0px 0px;
 }
 
+
 .comment-content {
-    background-color: rgba(255, 255, 255);
-    padding: 10px 10px 10px 10px;
+  box-shadow:
+  0 1.4px 1.1px rgba(0, 0, 0, 0.034),
+  0 3.8px 2.6px rgba(0, 0, 0, 0.048),
+  0 6.2px 5px rgba(0, 0, 0, 0.06),
+  0 11.1px 8.9px rgba(0, 0, 0, 0.072),
+  0 20.9px 16.7px rgba(0, 0, 0, 0.086),
+  0 50px 40px rgba(0, 0, 0, 0.12)
+;
+
+  
+  
+
+  width: 100%;
+  margin: auto;
+  background-color: rgba(255,255,255, 0.5);
+  padding: 10px 10px 2px 10px;
+  border-radius: 0px 5px 5px 5px;
 }
+
+
 
 #mj_sin, #sin_beat, #rih_em {
     margin: auto;
@@ -409,9 +429,57 @@ th:nth-child(2) {
 
 /*
 
-BRUSH -- SCATTERPLOT
+Table
 
 */
+
+#tables-content{
+    width: 95%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+#customers {
+  border-collapse: collapse;
+  width: 250px;
+}
+
+#customers td, #customers th {
+  padding: 6px;
+  font-size: 13px;
+}
+
+#customers tr:nth-child(even){background-color: #efefef;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 6px;
+  font-size: 20px;
+  padding-bottom: 6px;
+  border-radius : 8px 8px 0px 0px;
+  text-align: center;
+  background-color: #346df1;
+  opacity: 0.8;
+  color: white;
+}
+
+tbody tr {
+
+    border-collapse: separate;
+    border-spacing: 5px 5px;
+}
+
+
+
 table {
     font-family: sans-serif;
     font-size: 20px;
@@ -428,11 +496,7 @@ thead tr th {
     border-spacing: 5px 5px;
 }
 
-tbody tr {
-    border-top: 3px solid #4d4d4d;
-    border-collapse: separate;
-    border-spacing: 5px 5px;
-}
+
 
 th,
 td {
