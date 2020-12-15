@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Hit Artist Analyzer</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- Web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700|Source+Serif+Pro:700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+    <!-- favicon.ico. Place these in the root directory. -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico" />
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Chart JS -->
+
+
+    <!-- D3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <i class="material-icons md-light">equalizer</i>
+                <!-- Title -->
+                <span class="mdl-layout-title">Covid Trends</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation. We hide it in small screens. -->
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="#audio">Audio</a>
+                    <a class="mdl-navigation__link" href="#lyrics">Lyrics</a>
+                    <a class="mdl-navigation__link" href="#comparison">Artists comparison</a>
+                    <a class="mdl-navigation__link" href="https://github.com/com-480-data-visualization/com-480-project-js" target="_blank">Github repository</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="mdl-layout__content wrapper">
+
+
+            <!-- Banner -->
+
+            <div id="banner">
+                
+            </div>
+
+
+
+
+
+            <div class="page-content">
+
+                <!-- Title -->
+                <div class="title">
+                    <h1 class="main_title">Covid Trends</h1>
+                    <h2>Predicting covid deaths with Google Trends</h2>
+                    <hr>
+                </div>
+
+                <!-- Intro -->
+                <div id="intro">
+                    <p>Since January 2020, the covid-19 pandemic has challenged the various hospital systems. The response to this health crisis has often been a lockdown, causing an economic and social crisis. This response is in reaction rather than in preparation and anticipation.</p>
+
+
+                    <p>
+                        Since the situation evolves every week, it's interesting to have an accurate short term forecast in order to better anticipate the next outbreak and develop a better strategy to contain the virus and thus limit the economic and social impact. This study proposes to extend the method used in the paper “Predicting the present with Google trends” to develop a short term forecast of the number of Covid-19 cases in France. Then, improving this prediction using appropriate and relevant Google Trends data. For example, by including indexes of topics related to health at the level of research on the symptoms of Covid, or by using indexes related to social life and which could indicate an increase in trips and gatherings over a given period.</p>
+                </div>
+
+
+                <!-- Audio Analysis -->
+                <div id="audio">
+                    <h1>Audio Analysis</h1>
+                    <h4>A Data-Driven Audio Tour of the Artists</h4>
+                    <hr>
+                    <p>To identify and compare the audio signature of the different artists, we propose to use the following features provided by <a class="link" href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">Spotify</a> that were then normalized:
+                        Tempo, Valence, Acousticness, Loudness, Energy and Danceability. The following vizualization allows you to compare different artists and explore their audio signature. Play with the buttons at the top and the bottom of the plot to compare two artists.</p>
+
+
+                    <!-- Add buttons -->
+                    <!-- Add 2 buttons -->
+                    
+
+
+
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/1.embed" height="525" width="100%"></iframe>
+
+
+                    <div class="comment">
+                        <div class="comment-title">
+                            What can we see?
+                        </div>
+                        <div class="comment-content">
+                            <p>We can see the diminution of the "acousticness" value for more modern musicians. As expected, Eminem seems to be the loudest and the most energetic singer. What else can you observe?</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Lyrics Analysis -->
+                <div id="lyrics">
+                    <h1>Lyrics Analysis</h1>
+                    <hr>
+                    <p>
+
+                        Let’s now explore the lyrics of the different artists : what are the most used words by the different artists? Are they the same? Is Eminem positive or negative in his songs? What about the others? What words describe a
+                        positive or a negative songs for each artist? </br>
+
+                        Move the brush from top to bottom and resize it to select more or less positive songs for each artist and see what are the most used words per artist for the selected songs.
+                    </p>
+
+                </div>
+
+                <div class="comment">
+                    <div class="comment-title">
+                        Key Takeaways
+                    </div>
+                    <div class="comment-content">
+                        <p>First, when selecting all the songs for all the artists, it appears that the word "love" is the most used word for all artists (except Eminem where it is "like"). It is comforting to know that there is so much love in this
+                            world.</p>
+                          <p>  Secondly, baby is in the top words of all artists except Frank Sinatra (and Eminem again…). We can deduce here that vocabulary has changed since Frank Sinatra's period but also that Eminem is lonely.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="comment">
+                    <div class="comment-title">
+                        Why are you so negative?
+                    </div>
+                    <div class="comment-content">
+                        <p>It is not a surprise, Eminem has negative lyrics and is using many times (almost 1500) pretty bad words we can not write here (like fuck or shit). The data are pretty explicit, Eminem is a sad (or mad) guy.</p>
+                    </div>
+                </div>
+
+
+
+                
+
+
+                <div id="authors">
+
+                    <h1>Authors</h1>
+
+                    <p>Made by Baudoin de Sury, Jonathan Besomi and Julien Salomon for the course <a href="https://edu.epfl.ch/coursebook/en/data-visualization-COM-480">Data visualization, COM-480.</a></p>
+                </div>
+
+                <div style="height: 100px;"></div>
+
+            </div>
+            <footer>
+
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
