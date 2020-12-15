@@ -42,7 +42,9 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: 900;
+    text-align: justify;
 }
 
 h2 {
@@ -58,6 +60,10 @@ hr {
     opacity: 0.16;
     width: 100%;
     margin-bottom: 30px;
+}
+
+b {
+    font-weight: 1000;
 }
 
 .material-icons {
@@ -256,7 +262,8 @@ button {
 
 /* CSS for the comment box */
 .comment {
-    margin: auto;
+
+    margin-bottom: 100px;
     width: 90%;
 }
 
@@ -662,6 +669,3 @@ a {
 }
 
 
-.comment{
-    margin-bottom: 10px;
-}

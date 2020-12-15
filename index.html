@@ -92,11 +92,27 @@
 
                 <!-- Intro -->
                 <div id="intro">
-                    <p>Since January 2020, the covid-19 pandemic has challenged the various hospital systems. The response to this health crisis has often been a lockdown, causing an economic and social crisis. This response is in reaction rather than in preparation and anticipation.</p>
+                    <h4> "US could see a 'very deadly December' with tens of thousands of coronavirus death to come, computer model predicts" , "The COVID 19 CRISIS : 300,000 Deaths By December?", "A model predicts COVID 19 death toll will double" … 
+                    This kind of headline has continued to appear in the international press since the start of the health crisis linked to COVID 19. Predictions of the number of cases or deaths are multiplying and differing between them. How many of us find ourselves skeptical of these many predictions and doubt the numbers. </h4>
+                  <p>We propose, throughout this datastory, a method that would improve those predictions by including the information present on Google Trends. We are focusing the work around 3 main indicators: Research concerning the symptoms of COVID-19, those concerning social life through outings to restaurants for example and research related to activities and tutorial on how to make a mask for instance. We propose to compare the contribution of each request in order to lead to an improvement of the prediction. Let’s dive with us in this through our operations during the COVID 19 pandemic and find out what the data shows as changes in our lifestyle.</p>
 
 
                     <p>
-                        Since the situation evolves every week, it's interesting to have an accurate short term forecast in order to better anticipate the next outbreak and develop a better strategy to contain the virus and thus limit the economic and social impact. This study proposes to extend the method used in the paper “Predicting the present with Google trends” to develop a short term forecast of the number of Covid-19 cases in France. Then, improving this prediction using appropriate and relevant Google Trends data. For example, by including indexes of topics related to health at the level of research on the symptoms of Covid, or by using indexes related to social life and which could indicate an increase in trips and gatherings over a given period.</p>
+                        In order to perform a data analysis of COVID-19 deaths and Google Trends, we need to make several hypotheses. First, an epidemic spreads within a population and therefore epidemic peaks occur at different times around the world. Moreover, we have observed in 2020 the unilateral political measures taken to counter the health crisis. This is why focusing on a single country is important in order to have a homogeneous population subject to the same restrictions at the same time. It is therefore more interesting to focus our analysis on a small region: France. 
+                        Moreover, we focus here only on the mortality of COVID-19 and not on the cases. Indeed, covid positive cases depends on the testing capacity and therefore are less representative than the covid deaths of the different epidemic waves.</p>
+
+
+                    <p>Let’s first focus on the COVID-19 deaths data. We downloaded the data from the <a href="https://opendata.ecdc.europa.eu/covid19/casedistribution">EU open data portal</a> and then preprocessed them.</p>
+
+
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/3.embed" height="525" width="100%"></iframe>
+
+
+                    <p>Now that we have the COVID-19 deaths, let’s extract the Google Trends data : the key words or google requests. Which key-words do we choose ? We decided to select different categories of Google requests. The main idea idea of the category is to have similar keywords within the same group in order to compare them between them. For instance, we want to compare different symptoms and their relevance with the COVID-19 deaths. We present the different categories and associated keywords in the following table.</p>
+
+
+
+
                 </div>
 
 
@@ -215,24 +231,37 @@
 
 </div>
 
-<p>
-Since the situation evolves every week, it's interesting to have an accurate short term forecast in order to better anticipate the next outbreak and develop a better strategy to contain the virus and thus limit the economic and social impact. This study proposes to extend the method used in the paper “Predicting the present with Google trends” to develop a short term forecast of the number of Covid-19 cases in France. Then, improving this prediction using appropriate and relevant Google Trends data. For example, by including indexes of topics related to health at the level of research on the symptoms of Covid, or by using indexes related to social life and which could indicate an increase in trips and gatherings over a given period.</p>
 
+<p>How did we selected the different categories ? Here is some insights :</p>
+<p><b>Symptoms</b> : Google keywords related to covid symptoms as cough, fever, loss of taste, etc. Those keywords give an insight of the current concerns of google users about the COVID 19 symptoms and can explain and can give a more precise idea of ​​the evolution of the virus.</p>
+<p><b>Social</b> : Google keywords related to social activities such as top restaurant, top bar, etc. Those keywords give some details on the various social "movements". The idea would be to explain a link between these indicators and the evolution of COVID-19. This would be particularly interesting given the many restrictions around social life that are implemented by governments. </p>
+<p><b>How to</b> : Google keywords of the top 10 how to questions in 2020 related to different fields. We are looking, through these keywords, to show if there is a link between the increase in questions about how to make a mask and the evolution of the virus.</p>
 
+<p>Now that we have our Google requests dataset, let’s plot them. You can display or not each key-word by clicking on its label in the legend.</p>
 
+                    
 
 
 
                 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/4.embed" height="525" width="100%"></iframe>
 
 
+                <div class="comment">
+                    <div class="comment-title">
+                        A strong first wave
+                    </div>
+                    <div class="comment-content">
+                        <p>The symptom key words already reveal some insights. We see clearly many requests for all the key words in March/April 2020 (the first epidemic wave in France). What else do you see ? </p>
+                    </div>
+                </div>
+
+
                 <!-- Audio Analysis -->
                 <div id="audio">
                     <h1>Cross-correlation Analysis</h1>
-                    <h4>A Data-Driven Audio Tour of the Artists</h4>
+                    <h4>Are COVID deaths and Google Trends related ?</h4>
                     <hr>
-                    <p>To identify and compare the audio signature of the different artists, we propose to use the following features provided by <a class="link" href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-audio-features/">Spotify</a> that were then normalized:
-                        Tempo, Valence, Acousticness, Loudness, Energy and Danceability. The following vizualization allows you to compare different artists and explore their audio signature. Play with the buttons at the top and the bottom of the plot to compare two artists.</p>
+                    <p>Now that we have the COVID-19 deaths data and the Google trends for our different categories, we can compare them. In this section, we will perform a spearman cross-correlation analysis between the COVID-19 deaths and the Google Trends key-words for each category. Let’s see how it looks like.</p>
 
 
                     <!-- Add buttons -->
@@ -245,7 +274,6 @@ Since the situation evolves every week, it's interesting to have an accurate sho
 
                     <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/8.embed" height="525" width="100%"></iframe>
 
-
                     <div class="comment">
                         <div class="comment-title">
                             What can we see?
@@ -255,18 +283,19 @@ Since the situation evolves every week, it's interesting to have an accurate sho
                         </div>
                     </div>
 
+
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/8.embed" height="525" width="100%"></iframe>
+
                 </div>
 
                 <!-- Lyrics Analysis -->
                 <div id="lyrics">
-                    <h1>Lyrics Analysis</h1>
+                    <h1>Statistical Significance</h1>
                     <hr>
                     <p>
-
-                        Let’s now explore the lyrics of the different artists : what are the most used words by the different artists? Are they the same? Is Eminem positive or negative in his songs? What about the others? What words describe a
-                        positive or a negative songs for each artist? </br>
-
-                        Move the brush from top to bottom and resize it to select more or less positive songs for each artist and see what are the most used words per artist for the selected songs.
+                        Let’s fit our model on the entire dataset. The idea is to have an insight on the significant features for the prediction model.
+                        The metric used is a statistical test on the p-value, where a p-value less than the significant value of 0.05 means that there's no significant relation between the feature and the deaths data.
+                        This procedure is applied to the 3 different categories and the results for the most interesting requests per category by an appropriate visualization.
                     </p>
 
                 </div>
