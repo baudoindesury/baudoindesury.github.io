@@ -52,9 +52,9 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link" href="#audio">Symptoms</a>
-                    <a class="mdl-navigation__link" href="#lyrics">Social</a>
-                    <a class="mdl-navigation__link" href="#comparison">How to?</a>
+                    <a class="mdl-navigation__link" href="#audio">Cross Correlation</a>
+                    <a class="mdl-navigation__link" href="#lyrics">Significance</a>
+                    <a class="mdl-navigation__link" href="#comparison">Forecasting</a>
                     <a class="mdl-navigation__link" href="https://github.com/com-480-data-visualization/com-480-project-js" target="_blank">Github repository</a>
                 </nav>
             </div>
@@ -157,75 +157,79 @@
   </tr>
 </table>
 
-<table id="customers">
-  <tr>
-    <th>Symptomes</th>
-  </tr>
-  <tr>
-    <td>fievre</td>
-  </tr>
-  <tr>
-    <td>toux seche</td>
-  </tr>
-  <tr>
-    <td>fatigue</td>
-  </tr>
-  <tr>
-    <td>courbatures</td>
-  </tr>
-  <tr>
-    <td>maux de gorge</td>
-  </tr>
-  <tr>
-    <td>perte du gout</td>
-  </tr>
-  <tr>
-    <td>perte odorat</td>
-  </tr>
-  <tr>
-    <td>essoufflement</td>
-  </tr>
-  <tr>
-    <td>diarrhee</td>
-  </tr>
-  <tr>
-    <td>maux de tete</td>
-  </tr>
-</table>
+
 
 <table id="customers">
   <tr>
-    <th>Symptomes</th>
+    <th>Social</th>
   </tr>
   <tr>
-    <td>fievre</td>
+    <td>blablacar</td>
   </tr>
   <tr>
-    <td>toux seche</td>
+    <td>taxi</td>
   </tr>
   <tr>
-    <td>fatigue</td>
+    <td>house party</td>
   </tr>
   <tr>
-    <td>courbatures</td>
+    <td>Uber</td>
   </tr>
   <tr>
-    <td>maux de gorge</td>
+    <td>top cafe</td>
   </tr>
   <tr>
-    <td>perte du gout</td>
+    <td>top bar</td>
   </tr>
   <tr>
-    <td>perte odorat</td>
+    <td>plato</td>
   </tr>
   <tr>
-    <td>essoufflement</td>
+    <td>top restaurant</td>
   </tr>
   <tr>
-    <td>diarrhee</td>
+    <td>Comparateur vol</td>
   </tr>
   <tr>
-    <td>maux de tete</td>
+    <td>Couvre-feu</td>
+  </tr>
+</table>
+
+
+
+<table id="customers">
+  <tr>
+    <th>How to ?</th>
+  </tr>
+  <tr>
+    <td>savoir si on a le coronavirus</td>
+  </tr>
+  <tr>
+    <td>mettre un masque</td>
+  </tr>
+  <tr>
+    <td>calculer son IMC</td>
+  </tr>
+  <tr>
+    <td>faire du pain</td>
+  </tr>
+  <tr>
+    <td>calculer distance 100 km</td>
+  </tr>
+  <tr>
+    <td>faire un masque sans machine</td>
+  </tr>
+  <tr>
+    <td>se transmet le coronavirus</td>
+  </tr>
+  <tr>
+    <td>fabriquer un gel hydroalcoolique</td>
+  </tr>
+  <tr>
+    <td>se transmet le coronavirus</td>
+  </tr>
+  <tr>
+    <td>mettre un masque chirurgical</td>
   </tr>
 </table>
 
@@ -243,8 +247,7 @@
 
 
 
-                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/4.embed" height="525" width="100%"></iframe>
-
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/12.embed" height="525" width="100%"></iframe>
 
                 <div class="comment">
                     <div class="comment-title">
@@ -254,6 +257,14 @@
                         <p>The symptom key words already reveal some insights. We see clearly many requests for all the key words in March/April 2020 (the first epidemic wave in France). What else do you see ? </p>
                     </div>
                 </div>
+
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/7.embed" height="525" width="100%"></iframe>
+
+
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/9.embed" height="525" width="100%"></iframe>
+
+
+                
 
 
                 <!-- Audio Analysis -->
@@ -272,7 +283,7 @@
 
                     
 
-                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/8.embed" height="525" width="100%"></iframe>
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/18.embed" height="525" width="100%"></iframe>
 
                     <div class="comment">
                         <div class="comment-title">
@@ -284,7 +295,27 @@
                     </div>
 
 
-                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~baudoindesury/8.embed" height="525" width="100%"></iframe>
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/23.embed" height="525" width="100%"></iframe>
+
+                    <div class="comment">
+                        <div class="comment-title">
+                            What can we see?
+                        </div>
+                        <div class="comment-content">
+                            <p>We can see the diminution of the "acousticness" value for more modern musicians. As expected, Eminem seems to be the loudest and the most energetic singer. What else can you observe?</p>
+                        </div>
+                    </div>
+
+                    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/20.embed" height="525" width="100%"></iframe>
+
+                    <div class="comment">
+                        <div class="comment-title">
+                            What can we see?
+                        </div>
+                        <div class="comment-content">
+                            <p>We can see the diminution of the "acousticness" value for more modern musicians. As expected, Eminem seems to be the loudest and the most energetic singer. What else can you observe?</p>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -292,34 +323,93 @@
                 <div id="lyrics">
                     <h1>Statistical Significance</h1>
                     <hr>
+                    <p>Now that the different features have been selected and the first step of the study has been carried out, we propose a second approach to see the relationship differently. The idea is to fit a linear regressor ( AR(1) ) on the data. The model takes as external variables the index corresponding to each keyword.</p>
                     <p>
-                        Let’s fit our model on the entire dataset. The idea is to have an insight on the significant features for the prediction model.
+                        Let’s fit our model on the data and extract the relevant features. The idea is to have an insight on the significant features for the prediction model.
                         The metric used is a statistical test on the p-value, where a p-value less than the significant value of 0.05 means that there's no significant relation between the feature and the deaths data.
-                        This procedure is applied to the 3 different categories and the results for the most interesting requests per category by an appropriate visualization.
+                        This procedure is applied to the 3 different categories and the results for the most interesting requests per category in the following visualizations.
                     </p>
 
                 </div>
 
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/28.embed" height="525" width="100%"></iframe>
+
                 <div class="comment">
                     <div class="comment-title">
-                        Key Takeaways
+                        What can we see ?
                     </div>
                     <div class="comment-content">
-                        <p>First, when selecting all the songs for all the artists, it appears that the word "love" is the most used word for all artists (except Eminem where it is "like"). It is comforting to know that there is so much love in this
-                            world.</p>
-                          <p>  Secondly, baby is in the top words of all artists except Frank Sinatra (and Eminem again…). We can deduce here that vocabulary has changed since Frank Sinatra's period but also that Eminem is lonely.</p>
+                        <p>We notice that 3 requests are significantely linked to the COVID deaths : Diarrhee, loss of smell and loss of taste. This is interesting since the queries related to the most recognizable COVID symptoms tend to have a smaller p-values than the other. This allows to confirm the conclusions of the correlation chapter. However, the diarhee keyword seems like an outlier, but looking at its time series, it seems that it follows the same evolution as the death data.</p>
+                    </div>
+                </div>
+
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/30.embed" height="525" width="100%"></iframe>
+
+
+
+                <div class="comment">
+                    <div class="comment-title">
+                        What can we see ?
+                    </div>
+                    <div class="comment-content">
+                        <p>This time, the results are unexpected. The p value tends to be smaller for the requests related to blablacar, uber and flights comparator. These requests are negatively correlated to the evolution of death. But none of the requests have a significant effect on the death data, which is quiete surprising. We would expect a stronger statistical relation.</p>
                     </div>
                 </div>
 
 
+                <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/32.embed" height="525" width="100%"></iframe>
 
                 <div class="comment">
                     <div class="comment-title">
-                        Why are you so negative?
+                        What can we see ?
                     </div>
                     <div class="comment-content">
-                        <p>It is not a surprise, Eminem has negative lyrics and is using many times (almost 1500) pretty bad words we can not write here (like fuck or shit). The data are pretty explicit, Eminem is a sad (or mad) guy.</p>
+                        <p>Finally, the how to indicators are quiete interesting. We observe that the most significant requests are the one related to how to design a home mask for example, or how to calculate the IMC. Those requests are totally related to the COVID situation and especially to the lockdown situation.</p>
                     </div>
+                </div>
+
+
+                <div id="comparison">
+                  <h1>Forecasting</h1>
+                  <h4>Can we forecast the COVID-19 deaths using Google Trends ?</h4>
+                  <hr>
+                  <p>
+                  Let's explore the one step ahead forecast using an AR-1 model. The data are split into a train set, which stops at the end of the first wave, and a test set. The goal of this part is to explore the performance of Google Trends data in improving the prediction of the second wave of COVID-19 .The MRE is computed between the base model and the trend model. The idea here is to observe the effect of each request on the MRE and look for improvements. Thus, a trend model is computed for each request. The resulting improvement (or deterioration) of the MRE is then plotted and some conclusions are made.</p>
+
+                  <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/34.embed" height="525" width="100%"></iframe>
+
+                  <div class="comment">
+                    <div class="comment-title">
+                        What can we see ?
+                    </div>
+                    <div class="comment-content">
+                        <p>The highest MAE improvement appears when we include the loss of smell in the model, and positive improvement is still visible for all the COVID-19's specific symptoms. This result is interesting : By including the requests related to the most particular COVID symptoms, we improve the forecasting model.</p>
+                    </div>
+                  </div>
+
+                  <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/36.embed" height="525" width="100%"></iframe>
+
+                  <div class="comment">
+                    <div class="comment-title">
+                        What can we see ?
+                    </div>
+                    <div class="comment-content">
+                        <p>For this category, we expected those kind of results : The requests that helps improving the model are the queries that are commom to the two waves. For example, there's a decrease of the queries related to the flight comparator because of lockdown, and this effect is present in the 2 waves. But, if we take the plato query, which was a game who got really popular in the first wave of COVID 19 and totally disappeared in the second one, we get an important deterioration of the MAE. This could mean that the social phenomenas in the two waves are different. However, we would have expected a larger effect for the "The Top cafe" and "Top restaurant" keywords. The smaller oberseved effect could be explained by the fact that the model is still a simple model and doesn"t learn to "anticipate", since these two keywords should have an indicator role before the wave arrives.</p>
+                    </div>
+                  </div>
+
+
+                  <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plotly.com/~covidtrends/38.embed" height="525" width="100%"></iframe>
+
+                  <div class="comment">
+                    <div class="comment-title">
+                        What can we see ?
+                    </div>
+                    <div class="comment-content">
+                        <p>For this category, we expected those kind of results</p>
+                    </div>
+                  </div>
+
                 </div>
 
 
@@ -331,7 +421,7 @@
 
                     <h1>Authors</h1>
 
-                    <p>Made by Baudoin de Sury, Jonathan Besomi and Julien Salomon for the course <a href="https://edu.epfl.ch/coursebook/en/data-visualization-COM-480">Data visualization, COM-480.</a></p>
+                    <p>Made by Baudoin de Sury, Mehdi Akeddar and Jérémy Plassman. </p>
                 </div>
 
                 <div style="height: 100px;"></div>

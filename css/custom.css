@@ -263,7 +263,7 @@ button {
 /* CSS for the comment box */
 .comment {
 
-    margin-bottom: 100px;
+    margin-bottom: 60px;
     width: 90%;
 }
 
@@ -280,12 +280,12 @@ button {
 
 .comment-content {
   box-shadow:
-  0 1.4px 1.1px rgba(0, 0, 0, 0.034),
-  0 3.8px 2.6px rgba(0, 0, 0, 0.048),
-  0 6.2px 5px rgba(0, 0, 0, 0.06),
-  0 11.1px 8.9px rgba(0, 0, 0, 0.072),
-  0 20.9px 16.7px rgba(0, 0, 0, 0.086),
-  0 50px 40px rgba(0, 0, 0, 0.12)
+  0 9.7px 0.6px rgba(0, 0, 0, 0.034),
+  0 1.7px 1.3px rgba(0, 0, 0, 0.048),
+  0 3.1px 2.5px rgba(0, 0, 0, 0.06),
+  0 5.5px 4.5px rgba(0, 0, 0, 0.072),
+  0 10px 9px rgba(0, 0, 0, 0.086),
+  0 25px 20px rgba(0, 0, 0, 0.12)
 ;
 
   
@@ -441,7 +441,7 @@ Table
 */
 
 #tables-content{
-    width: 95%;
+    width: 100%;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -667,5 +667,3 @@ td {
 a {
     color: rgba(255, 99, 99);
 }
-
-
